@@ -8,6 +8,9 @@ public class CameraWork : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+        GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
+        
+        Debug.Log(coins.Length);
     }
 
     // Update is called once per frame
